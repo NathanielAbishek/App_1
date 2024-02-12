@@ -57,7 +57,7 @@ class MainActivity : ComponentActivity() {
         var newFont = false
         binding.buttonFont.setOnClickListener {
             if (!newFont) {
-                val typeface = Typeface.create("sans-serif-thin", Typeface.NORMAL)
+                val typeface = Typeface.create("cursive", Typeface.NORMAL)
                 binding.textView.typeface = typeface
                 newFont = true
             }
