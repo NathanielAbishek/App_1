@@ -3,6 +3,7 @@ package com.example.app1
 import android.graphics.Color
 import android.graphics.Typeface
 import android.os.Bundle
+import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.constraintlayout.widget.ConstraintLayout
 import com.example.app1.databinding.ActivityMainBinding
@@ -28,6 +29,12 @@ class MainActivity : ComponentActivity() {
                 binding.textView.textSize = 30f
                 newSize = false
             }
+
+            val text = "Font size changed"
+            val duration = Toast.LENGTH_SHORT
+
+            val toast = Toast.makeText(applicationContext, text, duration)
+            toast.show()
         }
 
         var newTextColor = false
@@ -40,6 +47,12 @@ class MainActivity : ComponentActivity() {
                 binding.textView.setTextColor(Color.BLACK)
                 newTextColor = false
             }
+
+            val text = "Text colour changed"
+            val duration = Toast.LENGTH_SHORT
+
+            val toast = Toast.makeText(applicationContext, text, duration)
+            toast.show()
         }
 
         var newBGColor = false
@@ -52,6 +65,12 @@ class MainActivity : ComponentActivity() {
                 binding.layout.setBackgroundColor(Color.WHITE)
                 newBGColor = false
             }
+
+            val text = "Layout colour changed"
+            val duration = Toast.LENGTH_SHORT
+
+            val toast = Toast.makeText(applicationContext, text, duration)
+            toast.show()
         }
 
         var newFont = false
@@ -66,6 +85,12 @@ class MainActivity : ComponentActivity() {
                 binding.textView.typeface = typeface
                 newFont = false
             }
+
+            val text = "Text font changed"
+            val duration = Toast.LENGTH_SHORT
+
+            val toast = Toast.makeText(applicationContext, text, duration)
+            toast.show()
         }
 
     }
